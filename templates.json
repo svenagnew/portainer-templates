@@ -795,5 +795,25 @@
         "bind": "/var/run/docker.sock"
       }
     ]
+  },
+  {
+    "title": "Mattermost Multi-Node Docker",
+    "name": "Mattermost",
+    "type": "stack",
+    "categories": ["development", "project-management"],
+    "description": "All team communication in one place, searchable and accessible anywhere",
+    "logo": "https://about.mattermost.com/wp-content/uploads/2017/08/Mattermost-Logo-Blue.svg",
+    "note": "Mattermost is a healthy alternative to Slack - make sure you check out their <bold>CLI</bold>.",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/svenagnew/portainer-templates",
+      "stackfile": "stacks/mattermost/docker-stack.yml"
+    },
+    "env": [
+      {
+        "name": "COPYRIGHT_STRING",
+        "label": "Copyright Notice"
+      }
+    ]
   }
 ]
